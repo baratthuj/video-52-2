@@ -1,0 +1,500 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+.netflix-sans-font-loaded {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.nkufi-font-loaded {
+    font-family: NKufi,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.netflix-sans-font-loaded.graphik-font-loaded {
+    font-family: GraphikTH,'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif
+}
+
+.error-page {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 10px;
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    background: rgba(0,0,0,.18);
+    bottom: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    left: 0;
+    margin-top: 68px;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000
+}
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+:root{
+    --wrapperLarge: calc(83.33333333333334% - 6rem);
+
+    --wrapperSmall: calc(100% - 3rem);
+
+    --red: rgb(229, 9, 20);
+
+    --border: rgb(35, 35, 35);
+
+    --links:rgba(255, 255, 255, 0.7);
+}
+
+h1, h2{
+    font-size: 48px;
+    font-weight: 900;
+}
+h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+p{
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+span{
+    font-size: 24px;
+}
+.inputField{
+    width: 25%;
+    min-width: 12.5rem;
+    padding: 1.5rem 1rem .5rem;
+    background: rgba(22, 22, 22, 0.7);
+    border-radius: 0.25rem;
+    border: 0.0625rem solid rgba(128, 128, 128, 0.7);
+    font-size: 1rem;
+}
+
+.inputField:focus{
+    outline: .12rem solid white;
+    outline-offset: 2px;
+}
+.btn{
+    background-color: var(--red);
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 12px 24px;
+    margin-left: .5rem;
+}
+.btn::after{
+    content: url(assets/images/greaterThan.svg);
+    margin-left: 0.75rem;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+header{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url(assets/images/cover.jpg);
+    object-fit: cover;
+    background-position: center center;
+    min-height: 43.75rem;
+    
+}
+.nav{
+    max-width: var(--wrapperLarge);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+
+}
+.nav .logo img{
+    width: 9.5rem;
+    height: 2.5rem;
+}
+.buttons{
+    display: flex;
+    gap: 1.8rem;
+}
+.buttons .language .selection{
+    background-color: rgba(22,22,22,0.7);
+    border-radius: .25rem;
+    padding: .375rem calc(2.25rem + 0rem) .375rem calc(0.75rem + 1rem + 0.5rem);
+}
+.buttons .language .selection:active{
+    outline: 4px solid white;
+
+}
+
+.selection option{
+    background-color: white;
+    color: black;
+    border: 0px solid rgba(128,128,128,0.7);
+}
+.buttons button{
+    background-color: var(--red);
+    border-width: 0.0625rem;
+    border-radius: calc(
+        0.25rem - 0.0625rem
+    );
+    border-color: transparent;
+    padding: .25rem 1rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+.hero{
+    max-width: var(--wrapperLarge);
+    margin: auto;
+    text-align: center;
+    padding: 9.875rem 0 4rem;
+}
+
+.form{
+    margin-top: 1.5rem;
+    padding: 0 2rem;
+}
+
+.form h3{
+    text-align: center;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0;
+}
+/* .input .inputField{
+    width: 100%;
+} */
+.wrapper{
+    background-color: black;
+    border-top: .5rem solid var(--border);
+}
+.card{
+    max-width: var(--wrapperLarge);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    
+}
+.cardReverse{
+    flex-direction: row-reverse;
+}
+.left{
+    flex: 1;
+}
+
+.right{
+    flex: 1;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.right img{
+    width: 100%;
+}
+.right video{
+    width: 73%;
+    position: absolute;
+    top: 110px;
+    left: 92px;
+    z-index: -1;
+}
+
+.layer{
+    border: 2px solid rgba(128, 128, 128, 0.7);
+    border-radius: .75rem;
+    position: absolute;
+    top: 70%;
+    left: 22%;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    background-color: black;
+    min-width: 15rem;
+    width: 50%;
+}
+
+.layer .left{
+    margin-right: 1rem;
+}
+.layer .center{
+    flex: 3;
+}
+.layer .center .title{
+    font-size: 16px;
+}
+.layer .center .type{
+    font-size: 14px;
+    color: #0071EB;
+}
+.layer .right{
+    justify-self: flex-end;
+}
+.layer .left img{
+    height: 5rem;
+    width: 57px;
+}
+
+.layer .right img{
+    width: 3rem;
+}
+.cardThree .right video{
+    width: 65%;
+    top: 35px;
+    left: 120px;
+}
+
+.faq{
+    background-color: black;
+    border-top: .5rem solid var(--border);
+    padding: 4.5rem 0;
+}
+.heading{
+    text-align: center;
+}
+.faqs{
+    max-width: var(--wrapperLarge);
+    margin: 1.5rem auto 0;
+}
+.queCard{
+    background-color: var(--border);
+    padding: 24px;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.queCard:hover{
+    background-color: rgb(74, 74, 74);
+}
+.queCard span{
+    font-size: 24px;
+}
+footer{
+    border-top: .5rem solid var(--border);
+    background-color: black;
+    position: relative;
+}
+.linkwrap{
+    max-width: var(--wrapperLarge);
+    padding: 4.5rem 3rem;
+    margin: 0 auto;
+}
+.call{
+    display: flex;   
+}
+.number{
+    margin-bottom: .75rem;
+    font-size: 16px;
+    color: var(--links);
+}
+.number a{
+    font-size: 16px;
+    color: var(--links);
+}
+
+.links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.links a{
+    display: flex;
+    font-size: 14px;
+    color: var(--links);
+    margin: 1rem 0 0 .75rem;
+}
+
+.brandname{
+    display: flex;
+    font-size: 14px;
+    margin-top: calc(.75rem*2);
+    margin-left: .75rem;
+    color: var(--links);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:600px){
+
+    h1, h2{
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+    }
+    h3, p{
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .btn{
+        margin-top: 1rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+        min-height: 3rem;
+        padding: 0.5rem 1rem;
+    }
+    .inputField{
+        width: 94%;
+        padding: 1.25rem 1rem .25rem;
+    }
+
+    header{
+        object-fit: none;
+        /* background-position: top right; */
+    }
+    .nav{
+        max-width: var(--wrapperSmall);
+        padding: 1.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .nav .logo img{
+        width: 5.5625rem;
+        height: 1.5rem;
+    }
+    .nav .language{
+        display: none;
+    }
+    .hero{
+        max-width: var(--wrapperSmall);
+        padding: 7.5rem 0 2rem
+    }
+    .input{
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+    .card{
+        flex-direction: column;
+        max-width: var(--wrapperSmall);
+        padding: 3.5rem 0;
+    }
+    .right video{
+        top: 48px;
+        left: 44px;
+    }
+    .layer{
+        top: 170px;
+        left: 20px;
+        width: 15rem;
+        max-height: 20%;
+        padding: 0.25rem 0.65rem;
+    }
+    .layer .center .title{
+        font-size: 14px;
+    }
+    .layer .center .type{
+        font-size: 12px;
+    }
+    .layer .left img{
+        height: 3.125rem;
+        width: 2.141rem;
+    }
+    .cardThree .right video{
+        top: 25px;
+        left: 54px;
+    }
+    .faq{
+        padding: 3.5rem 0;
+    }
+    .faqs{
+        max-width: var(--wrapperSmall);
+    }
+    .queCard span{
+        font-size: 18px;
+    }
+    .queCard span img{
+        width: 24px;
+        height: 24px;
+    }
+    .linkwrap{
+        max-width: var(--wrapperSmall);
+        padding: 0 1.5rem;
+        margin: 2rem 0;
+    }
+    .links{
+        grid-template-columns: 1fr 1fr;
+    }
+}
